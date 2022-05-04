@@ -5,6 +5,8 @@ Description=Camera Background Replacer
 Type=simple
 WorkingDirectory=/opt/webcam
 ExecStart=/opt/miniconda3/envs/webcam/bin/python3 fake.py -w /dev/video0 -v /dev/video20 --no-foreground --background-image back/city.jpg
+Restart=on-failure
+RestartSec=5s
 
 [Install]
 WantedBy=multi-user.target

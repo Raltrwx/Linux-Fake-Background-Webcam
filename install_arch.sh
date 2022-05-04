@@ -4,7 +4,7 @@ trizen -S linux-headers v4l2loopback-dkms python python-pip miniconda3
 sudo ./v4l2loopback-install.sh
 conda env create -n webcam --file environment.yaml
 mkdir -p ~/.config/systemd/user
-cp fakewebcam.service ~/.config/systemd/user/
+sudo cp fakewebcam.service ~/.config/systemd/user/
 sudo systemctl daemon-reload
 systemctl --user enable fakewebcam.service
 echo "Installed 
