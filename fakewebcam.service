@@ -4,7 +4,7 @@ Description=Camera Background Replacer
 [Service]
 Type=simple
 WorkingDirectory=/opt/webcam
-ExecStart=/opt/miniconda3/envs/webcam/bin/python3 fake.py -w /dev/video0 -v /dev/video2 --no-foreground --background-image back/city.jpg
+ExecStart=/home/matt/.conda/envs/webcam/bin/python3 fake.py -w /dev/video0 -v /dev/video2 --no-foreground --background-image back/city.jpg
 Restart=on-failure
 RestartSec=5s
 
