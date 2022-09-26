@@ -1,6 +1,6 @@
 #!/bin/bash
 #Don't run this as root
-trizen -S linux-headers v4l2loopback-dkms python python-pip miniconda3
+trizen -S linux-headers v4l2loopback-dkms-git python python-pip miniconda3
 sudo ./v4l2loopback-install.sh
 conda env create -n webcam --file environment.yaml
 mkdir -p ~/.config/systemd/user
